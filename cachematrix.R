@@ -30,8 +30,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## Computes the inverse of the cacheable matrix
-## If the inverse has already been calculated and theres no change in matrix
+## If the inverse has already been calculated and there is no change in matrix
 ## then the cacheSolve() returns the cached inverse
+## If there's no cache then the function computes the inverse
 
 cacheSolve <- function(x, ...) {
         
